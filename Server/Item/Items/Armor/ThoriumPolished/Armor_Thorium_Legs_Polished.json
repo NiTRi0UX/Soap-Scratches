@@ -1,0 +1,68 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Thorium_Legs_Polished.name"
+  },
+  "Parent": "Armor_Thorium_Legs",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Thorium_Legs",
+        "Quantity": 1,
+        "Durability": 120
+      },
+      {
+        "ItemId": "Ingredient_Emery",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "PolishWheel",
+        "Type": "Crafting",
+        "Categories": [
+          "PolishWheel_Thorium"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 3
+  },
+  "Armor": {
+    "ArmorSlot": "Legs",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Pants",
+      "Shoes"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.1008,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.1008,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Poison": [
+        {
+          "Amount": 0.21,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 17,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "Quality": "Rare"
+}

@@ -1,0 +1,61 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Copper_Chest_Polished.name"
+  },
+  "Parent": "Armor_Copper_Chest",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Copper_Chest",
+        "Quantity": 1,
+        "Durability": 80
+      },
+      {
+        "ItemId": "Ingredient_Silver_Foam",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "PolishWheel",
+        "Type": "Crafting",
+        "Categories": [
+          "PolishWheel_Copper"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 3
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Overtop"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.0774,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.0774,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 9,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "Quality": "Common"
+}

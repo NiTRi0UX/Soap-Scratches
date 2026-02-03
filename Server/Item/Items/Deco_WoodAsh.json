@@ -1,0 +1,78 @@
+{
+  "IconProperties": {
+    "Scale": 1.5,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -4
+    ]
+  },
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "TranslationProperties": {
+    "Name": "server.items.Deco_WoodAsh.name",
+    "Description": "server.items.Deco_WoodAsh.description"
+  },
+  "BlockType": {
+    "CustomModel": "Resources/Ingredients/Soap/Deco/Soap_Deco_WoodAsh.blockymodel",
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Ingredients/Soap/Deco/Soap_Deco_WoodAsh.png"
+      }
+    ],
+    "Gathering": {
+      "Harvest": {
+        "ItemId": "Deco_WoodAsh"
+      }
+    },
+    "HitboxType": "Rubble",
+    "Opacity": "Transparent",
+    "Group": "Props",
+    "Support": {
+      "Down": [
+        {
+          "MatchSelf": "Disallowed",
+          "Support": "Required",
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "VariantRotation": "NESW",
+    "BlockSoundSetId": "Gravel"
+  },
+  "ItemSoundSetId": "ISS_Blocks_Gravel",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Charcoal",
+        "Quantity": 10
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Deco_WoodAsh",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "CompoundBench",
+        "Categories": [
+          "CompoundBench_Deco"
+        ]
+      }
+    ],
+    "TimeSeconds": 2
+  },
+  "Texture": "Resources/Ingredients/Soap/Deco/Soap_Deco_Soap.png",
+  "Icon": "Icons/ItemsGenerated/Deco_WoodAsh.png"
+}

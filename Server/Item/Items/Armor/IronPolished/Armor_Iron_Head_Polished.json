@@ -1,0 +1,59 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Iron_Head_Polished.name"
+  },
+  "Parent": "Armor_Iron_Head",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Iron_Head",
+        "Quantity": 1,
+        "Durability": 100
+      },
+      {
+        "ItemId": "Ingredient_Silver_Foam",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "PolishWheel",
+        "Type": "Crafting",
+        "Categories": [
+          "PolishWheel_Iron"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 3
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "EarAccessory",
+      "Ear",
+      "Haircut",
+      "HeadAccessory"
+    ],
+    "DamageResistance": {
+      "Physical": [],
+      "Projectile": [
+        {
+          "Amount": 0.057,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 9,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "Quality": "Uncommon"
+}

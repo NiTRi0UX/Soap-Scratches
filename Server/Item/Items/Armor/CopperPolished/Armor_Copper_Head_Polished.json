@@ -1,0 +1,64 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Copper_Head_Polished.name"
+  },
+  "Parent": "Armor_Copper_Head",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Copper_Head",
+        "Quantity": 1,
+        "Durability": 80
+      },
+      {
+        "ItemId": "Ingredient_Silver_Foam",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "PolishWheel",
+        "Type": "Crafting",
+        "Categories": [
+          "PolishWheel_Copper"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 3
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "EarAccessory",
+      "Ear",
+      "Haircut",
+      "HeadAccessory"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.043,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.043,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 5,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "Quality": "Common"
+}

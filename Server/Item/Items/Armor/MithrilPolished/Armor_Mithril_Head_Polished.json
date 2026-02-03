@@ -1,0 +1,64 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Mithril_Head_Polished.name"
+  },
+  "Parent": "Armor_Mithril_Head",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Mithril_Head",
+        "Quantity": 1,
+        "Durability": 180
+      },
+      {
+        "ItemId": "Ingredient_Brite",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "PolishWheel",
+        "Type": "Crafting",
+        "Categories": [
+          "PolishWheel_Mithril"
+        ],
+        "RequiredTierLevel": 3
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 3
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "EarAccessory",
+      "Ear",
+      "Haircut",
+      "HeadAccessory"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.088,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.088,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 14,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "Quality": "Epic"
+}

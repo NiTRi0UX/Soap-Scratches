@@ -1,0 +1,85 @@
+{
+  "Model": "Resources/Ingredients/Soap/Ingredient_Brite.blockymodel",
+  "Texture": "Resources/Ingredients/Soap/Ingredient_Brite.png",
+  "IconProperties": {
+    "Scale": 1.3,
+    "Rotation": [
+      22.5,
+      47,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -6
+    ]
+  },
+  "Categories": [
+    "Items.Ingredients"
+  ],
+  "PlayerAnimationsId": "Block",
+  "TranslationProperties": {
+    "Name": "server.items.Ingredient_Brite.name",
+    "Description": "server.items.Ingredient_Brite.description"
+  },
+  "BlockType": {
+    "CustomModel": "Resources/Ingredients/Soap/Ingredient_Brite.blockymodel",
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Ingredients/Soap/Ingredient_Brite.png"
+      }
+    ],
+    "Gathering": {
+      "Harvest": {
+        "ItemId": "Ingredient_Brite"
+      }
+    },
+    "HitboxType": "Rubble",
+    "Opacity": "Transparent",
+    "Group": "Props",
+    "Support": {
+      "Down": [
+        {
+          "MatchSelf": "Disallowed",
+          "Support": "Required",
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Water"
+  },
+  "ItemSoundSetId": "ISS_Blocks_Splatty",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ore_Silver",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Charcoal"
+      },
+      {
+        "ItemId": "Rock_Salt"
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Ingredient_Brite",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "CompoundBench",
+        "RequiredTierLevel": 3,
+        "Categories": [
+          "CompoundBench_Polish"
+        ]
+      }
+    ],
+    "TimeSeconds": 4
+  },
+  "Icon": "Icons/ItemsGenerated/Ingredient_Brite.png"
+}

@@ -1,0 +1,62 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Mithril_Chest_Polished.name"
+  },
+  "Parent": "Armor_Mithril_Chest",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Mithril_Chest",
+        "Quantity": 1,
+        "Durability": 180
+      },
+      {
+        "ItemId": "Ingredient_Brite",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "PolishWheel",
+        "Type": "Crafting",
+        "Categories": [
+          "PolishWheel_Mithril"
+        ],
+        "RequiredTierLevel": 3
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 3
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Overtop"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.1584,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.1584,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 24,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "DurabilityLossOnHit": 0.5,
+  "Quality": "Epic"
+}

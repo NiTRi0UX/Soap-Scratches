@@ -1,0 +1,95 @@
+{
+  "IconProperties": {
+    "Scale": 1.5,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -4
+    ]
+  },
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "TranslationProperties": {
+    "Name": "server.items.Deco_GrindingWheel.name",
+    "Description": "server.items.Deco_GrindingWheel.description"
+  },
+  "BlockType": {
+    "CustomModel": "Resources/Ingredients/Soap/Deco/Soap_Deco_GrindingWheel.blockymodel",
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Ingredients/Soap/Deco/Soap_Deco_GrindingWheel.png"
+      }
+    ],
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods",
+        "ItemId": "Deco_GrindingWheel"
+      }
+    },
+    "HitboxType": "Rubble",
+    "Opacity": "Transparent",
+    "Group": "Props",
+    "Support": {
+      "Down": [
+        {
+          "MatchSelf": "Disallowed",
+          "Support": "Required",
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "VariantRotation": "NESW",
+    "BlockSoundSetId": "Wood",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "Effects": {
+              "WorldSoundEventId": "SFX_Poop_Hit"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "Recipe": {
+    "Input": [
+      {
+        "Quantity": 10,
+        "ResourceTypeId": "Rock"
+      },
+      {
+        "Quantity": 10,
+        "ResourceTypeId": "Wood_All"
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Deco_GrindingWheel",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "CompoundBench",
+        "Categories": [
+          "CompoundBench_Deco"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "TimeSeconds": 2
+  },
+  "Icon": "Icons/ItemsGenerated/Deco_GrindingWheel.png"
+}

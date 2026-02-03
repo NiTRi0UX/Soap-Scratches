@@ -1,0 +1,78 @@
+{
+  "IconProperties": {
+    "Scale": 1.2,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -4
+    ]
+  },
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "TranslationProperties": {
+    "Name": "server.items.Deco_Soap.name",
+    "Description": "server.items.Deco_Soap.description"
+  },
+  "BlockType": {
+    "CustomModel": "Resources/Ingredients/Soap/Deco/Soap_Deco_Soap.blockymodel",
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Ingredients/Soap/Deco/Soap_Deco_Soap.png"
+      }
+    ],
+    "Gathering": {
+      "Harvest": {
+        "ItemId": "Deco_Soap"
+      }
+    },
+    "HitboxType": "Rubble",
+    "Opacity": "Transparent",
+    "Group": "Props",
+    "Support": {
+      "Down": [
+        {
+          "MatchSelf": "Disallowed",
+          "Support": "Required",
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "VariantRotation": "NESW",
+    "BlockSoundSetId": "Eggsac"
+  },
+  "ItemSoundSetId": "ISS_Blocks_Splatty",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 10
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Ingredient_Soap",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "CompoundBench",
+        "Categories": [
+          "CompoundBench_Deco"
+        ]
+      }
+    ],
+    "TimeSeconds": 2
+  },
+  "Texture": "Resources/Ingredients/Soap/Deco/Soap_Deco_Soap.png",
+  "Icon": "Icons/ItemsGenerated/Deco_Soap.png"
+}

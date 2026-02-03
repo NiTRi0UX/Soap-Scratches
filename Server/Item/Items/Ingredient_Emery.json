@@ -1,0 +1,87 @@
+{
+  "Model": "Resources/Ingredients/Soap/Ingredient_Emery.blockymodel",
+  "Texture": "Resources/Ingredients/Soap/Ingredient_Emery.png",
+  "IconProperties": {
+    "Scale": 1.4,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -4
+    ]
+  },
+  "Categories": [
+    "Items.Ingredients"
+  ],
+  "PlayerAnimationsId": "Block",
+  "TranslationProperties": {
+    "Name": "server.items.Ingredient_Emery.name",
+    "Description": "server.items.Ingredient_Emery.description"
+  },
+  "BlockType": {
+    "CustomModel": "Resources/Ingredients/Soap/Ingredient_Emery.blockymodel",
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Ingredients/Soap/Ingredient_Emery.png"
+      }
+    ],
+    "Gathering": {
+      "Harvest": {
+        "ItemId": "Ingredient_Emery"
+      }
+    },
+    "HitboxType": "Rubble",
+    "Opacity": "Transparent",
+    "Group": "Props",
+    "Support": {
+      "Down": [
+        {
+          "MatchSelf": "Disallowed",
+          "Support": "Required",
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "CubeShadingMode": "Standard",
+    "VariantRotation": "NESW",
+    "BlockSoundSetId": "Cloth"
+  },
+  "ItemSoundSetId": "ISS_Blocks_Soft",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ore_Iron",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Bar_Iron"
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blue"
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Ingredient_Emery",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "CompoundBench",
+        "RequiredTierLevel": 2,
+        "Categories": [
+          "CompoundBench_Polish"
+        ]
+      }
+    ],
+    "TimeSeconds": 3
+  },
+  "Icon": "Icons/ItemsGenerated/Ingredient_Emery.png"
+}

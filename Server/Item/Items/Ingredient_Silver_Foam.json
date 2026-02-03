@@ -1,0 +1,86 @@
+{
+  "Model": "Resources/Ingredients/Soap/Ingredient_Silver_Foam.blockymodel",
+  "Texture": "Resources/Ingredients/Soap/Ingredient_Silver_Foam.png",
+  "IconProperties": {
+    "Scale": 2,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -4
+    ]
+  },
+  "Categories": [
+    "Items.Ingredients"
+  ],
+  "PlayerAnimationsId": "Block",
+  "TranslationProperties": {
+    "Name": "server.items.Ingredient_Silver_Foam.name",
+    "Description": "server.items.Ingredient_Silver_Foam.description"
+  },
+  "BlockType": {
+    "CustomModel": "Resources/Ingredients/Soap/Ingredient_Silver_Foam.blockymodel",
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Ingredients/Soap/Ingredient_Silver_Foam.png"
+      }
+    ],
+    "Gathering": {
+      "Harvest": {
+        "ItemId": "Ingredient_Silver_Foam"
+      }
+    },
+    "HitboxType": "Rubble",
+    "Opacity": "Transparent",
+    "Group": "Props",
+    "Support": {
+      "Down": [
+        {
+          "MatchSelf": "Disallowed",
+          "Support": "Required",
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Bush"
+  },
+  "ItemSoundSetId": "ISS_Blocks_Splatty",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "*Container_Bucket_State_Filled_Water",
+        "Quantity": 1
+      },
+      {
+        "Quantity": 1,
+        "ItemId": "Deco_Coral_Shell"
+      },
+      {
+        "ItemId": "Ingredient_Salt",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Ingredient_Silver_Foam",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "CompoundBench",
+        "Categories": [
+          "CompoundBench_Polish"
+        ]
+      }
+    ],
+    "TimeSeconds": 2
+  },
+  "Icon": "Icons/ItemsGenerated/Ingredient_Silver_Foam.png"
+}

@@ -1,0 +1,77 @@
+items.Deco_Soap.name = Soap
+items.Deco_Soap.description = Don't drop it!
+
+items.Deco_WoodAsh.name = Wood Ash
+items.Deco_WoodAsh.description = Tastes bland!
+
+items.Bench_CompoundBench.name = Compound Basin
+items.Bench_CompoundBench.description = Itchy!
+
+items.Bench_PolishWheel.name = Polish Wheel
+items.Bench_PolishWheel.description = Watch your fingers!
+
+benchCategories.CompoundBench.Deco = Decor
+benchCategories.CompoundBench.Polish = Polishes
+
+benchCategories.PolishWheel.Copper = Polished Copper
+benchCategories.PolishWheel.Iron = Polished Iron
+benchCategories.PolishWheel.Thorium = Polished Thorium
+benchCategories.PolishWheel.Cobalt = Polished Cobalt
+benchCategories.PolishWheel.Adamantite = Polished Adamantite
+benchCategories.PolishWheel.Mithril = Polished Mithril
+
+items.Ingredient_Silver_Foam.name = Silver Foam
+items.Ingredient_Silver_Foam.description = Not a fish!
+
+items.Deco_GrindingWheel.name = Mini Grindy
+items.Deco_GrindingWheel.description = Don't make fun of me!
+
+items.Deco_MacCleanish.name = MacCleanish
+items.Deco_MacCleanish.description = How'd a muppet like you pass selection?
+
+items.Deco_Lanolin.name = Lanolin
+items.Deco_Lanolin.description = Piney!
+
+items.Ingredient_Brite.name = Brite
+items.Ingredient_Brite.description = Shine on!
+
+items.Ingredient_Emery.name = Emery
+items.Ingredient_Emery.description = Paper?
+
+items.Armor_Adamantite_Chest_Polished.name = Adamantite Cuirass (Polished)
+items.Armor_Adamantite_Hands_Polished.name = Adamantite Gauntlets (Polished)
+items.Armor_Adamantite_Head_Polished.name = Adamantite Helm (Polished)
+items.Armor_Adamantite_Legs_Polished.name = Adamantite Greaves (Polished)
+items.Weapon_Shield_Adamantite_Polished.name = Adamantite Shield (Polished)
+
+items.Armor_Cobalt_Chest_Polished.name = Cobalt Cuirass (Polished)
+items.Armor_Cobalt_Hands_Polished.name = Cobalt Gauntlets (Polished)
+items.Armor_Cobalt_Head_Polished.name = Cobalt Helm (Polished)
+items.Armor_Cobalt_Legs_Polished.name = Cobalt Greaves (Polished)
+items.Weapon_Shield_Cobalt_Polished.name = Cobalt Shield (Polished)
+
+items.Armor_Copper_Chest_Polished.name = Copper Cuirass (Polished)
+items.Armor_Copper_Hands_Polished.name = Copper Gauntlets (Polished)
+items.Armor_Copper_Head_Polished.name = Copper Helm (Polished)
+items.Armor_Copper_Legs_Polished.name = Copper Greaves (Polished)
+items.Weapon_Shield_Copper_Polished.name = Copper Shield (Polished)
+
+items.Armor_Iron_Chest_Polished.name = Iron Cuirass (Polished)
+items.Armor_Iron_Hands_Polished.name = Iron Gauntlets (Polished)
+items.Armor_Iron_Head_Polished.name = Iron Helm (Polished)
+items.Armor_Iron_Legs_Polished.name = Iron Greaves (Polished)
+items.Weapon_Shield_Iron_Polished.name = Iron Shield (Polished)
+
+items.Armor_Mithril_Chest_Polished.name = Mithril Cuirass (Polished)
+items.Armor_Mithril_Hands_Polished.name = Mithril Gauntlets (Polished)
+items.Armor_Mithril_Head_Polished.name = Mithril Helm (Polished)
+items.Armor_Mithril_Legs_Polished.name = Mithril Greaves (Polished)
+items.Weapon_Shield_Mithril_Polished.name = Mithril Shield (Polished)
+
+items.Armor_Thorium_Chest_Polished.name = Thorium Cuirass (Polished)
+items.Armor_Thorium_Hands_Polished.name = Thorium Gauntlets (Polished)
+items.Armor_Thorium_Head_Polished.name = Thorium Helm (Polished)
+items.Armor_Thorium_Legs_Polished.name = Thorium Greaves (Polished)
+items.Weapon_Shield_Thorium_Polished.name = Thorium Shield (Polished)
+
+

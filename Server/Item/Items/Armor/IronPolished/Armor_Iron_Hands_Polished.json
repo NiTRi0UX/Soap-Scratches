@@ -1,0 +1,58 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Iron_Hands_Polished.name"
+  },
+  "Parent": "Armor_Iron_Hands",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Iron_Hands",
+        "Quantity": 1,
+        "Durability": 100
+      },
+      {
+        "ItemId": "Ingredient_Silver_Foam",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "PolishWheel",
+        "Type": "Crafting",
+        "Categories": [
+          "PolishWheel_Iron"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 3
+  },
+  "Armor": {
+    "ArmorSlot": "Hands",
+    "BaseDamageResistance": 0,
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.0456,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.0456,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 7,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "Quality": "Uncommon"
+}

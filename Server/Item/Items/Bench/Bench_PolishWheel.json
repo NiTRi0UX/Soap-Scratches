@@ -1,0 +1,232 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Bench_PolishWheel.name",
+    "Description": "server.items.Bench_PolishWheel.description"
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "Quantity": 10,
+        "ResourceTypeId": "Wood_Planks"
+      },
+      {
+        "Quantity": 10,
+        "ResourceTypeId": "Rock_Sandstone"
+      },
+      {
+        "Quantity": 10,
+        "ItemId": "Ingredient_Bar_Iron"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Workbench_Crafting"
+        ],
+        "Id": "Workbench"
+      }
+    ]
+  },
+  "Categories": [
+    "Furniture.Benches"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Benches/Bench_PolishWheel.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Benches/Bench_PolishWheel.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Bench_Workbench",
+    "VariantRotation": "NESW",
+    "Bench": {
+      "Type": "Crafting",
+      "Categories": [
+        {
+          "Id": "PolishWheel_Copper",
+          "Icon": "Icons/CraftingCategories/PolishWheel/Armor_Copper_Head.png",
+          "Name": "server.benchCategories.PolishWheel.Copper"
+        },
+        {
+          "Id": "PolishWheel_Iron",
+          "Icon": "Icons/CraftingCategories/PolishWheel/Armor_Iron_Head.png",
+          "Name": "server.benchCategories.PolishWheel.Iron"
+        },
+        {
+          "Id": "PolishWheel_Thorium",
+          "Icon": "Icons/CraftingCategories/PolishWheel/Armor_Thorium_Head.png",
+          "Name": "server.benchCategories.PolishWheel.Thorium"
+        },
+        {
+          "Id": "PolishWheel_Cobalt",
+          "Icon": "Icons/CraftingCategories/PolishWheel/Armor_Cobalt_Head.png",
+          "Name": "server.benchCategories.PolishWheel.Cobalt"
+        },
+        {
+          "Id": "PolishWheel_Adamantite",
+          "Icon": "Icons/CraftingCategories/PolishWheel/Armor_Adamantite_Head.png",
+          "Name": "server.benchCategories.PolishWheel.Adamantite"
+        },
+        {
+          "Id": "PolishWheel_Mithril",
+          "Icon": "Icons/CraftingCategories/PolishWheel/Armor_Mithril_Head.png",
+          "Name": "server.benchCategories.PolishWheel.Mithril"
+        }
+      ],
+      "LocalOpenSoundEventId": "SFX_Workbench_Open",
+      "LocalCloseSoundEventId": "SFX_Workbench_Close",
+      "CompletedSoundEventId": "SFX_Workbench_Craft",
+      "FailedSoundEventId": "SFX_Generic_Crafting_Failed",
+      "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
+      "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
+      "Id": "PolishWheel",
+      "TierLevels": [
+        {
+          "CraftingTimeReductionModifier": 0.0,
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ResourceTypeId": "Wood_All_Trunk",
+                "Quantity": 20
+              },
+              {
+                "ItemId": "Ingredient_Bar_Silver",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Bar_Iron",
+                "Quantity": 20
+              },
+              {
+                "ItemId": "Deco_Rope",
+                "Quantity": 10
+              }
+            ],
+            "TimeSeconds": 5.0
+          }
+        },
+        {
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ResourceTypeId": "Wood_All_Trunk",
+                "Quantity": 30
+              },
+              {
+                "ItemId": "Ingredient_Bar_Silver",
+                "Quantity": 10
+              },
+              {
+                "ItemId": "Ingredient_Bar_Gold",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Fabric_Scrap_Wool",
+                "Quantity": 20
+              },
+              {
+                "ItemId": "Deco_Rope",
+                "Quantity": 20
+              }
+            ],
+            "TimeSeconds": 10.0
+          },
+          "CraftingTimeReductionModifier": 0.15
+        },
+        {
+          "CraftingTimeReductionModifier": 0.3
+        }
+      ]
+    },
+    "State": {
+      "Id": "crafting",
+      "Definitions": {
+        "CraftCompleted": {
+          "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim",
+          "Looping": true
+        },
+        "CraftCompletedInstant": {
+          "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim"
+        },
+        "Tier2": {
+          "CustomModel": "Blocks/Benches/Bench_PolishWheel.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Benches/Bench_PolishWheel_Tier2.png",
+              "Weight": 1
+            }
+          ],
+          "HitboxType": "Bench_Workbench",
+          "State": {
+            "Id": "crafting",
+            "Definitions": {
+              "CraftCompleted": {
+                "CustomModelAnimation": "Blocks/Benches/Workbench2_Crafting.blockyanim"
+              }
+            }
+          }
+        },
+        "Tier3": {
+          "CustomModel": "Blocks/Benches/Bench_PolishWheel.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Benches/Bench_PolishWheel_Tier3.png",
+              "Weight": 1
+            }
+          ],
+          "HitboxType": "Bench_Workbench",
+          "State": {
+            "Id": "crafting",
+            "Definitions": {
+              "CraftCompleted": {
+                "CustomModelAnimation": "Blocks/Benches/Workbench3_Crafting.blockyanim"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "ParticleColor": "#6e4a2f",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Wood",
+    "CustomModelScale": 0.85
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.42,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      12.9,
+      -11.7
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Bench"
+    ]
+  },
+  "MaxStack": 1,
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "Icon": "Icons/ItemsGenerated/Bench_PolishWheel.png"
+}

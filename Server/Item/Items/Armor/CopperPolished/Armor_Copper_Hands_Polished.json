@@ -1,0 +1,58 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Copper_Hands_Polished.name"
+  },
+  "Parent": "Armor_Copper_Hands",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Copper_Hands",
+        "Quantity": 1,
+        "Durability": 80
+      },
+      {
+        "ItemId": "Ingredient_Silver_Foam",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "PolishWheel",
+        "Type": "Crafting",
+        "Categories": [
+          "PolishWheel_Copper"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 3
+  },
+  "Armor": {
+    "ArmorSlot": "Hands",
+    "BaseDamageResistance": 0,
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.0344,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.0344,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 4,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "Quality": "Common"
+}

@@ -1,0 +1,96 @@
+{
+  "IconProperties": {
+    "Scale": 1.2,
+    "Rotation": [
+      22.5,
+      47,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -8
+    ]
+  },
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "TranslationProperties": {
+    "Name": "server.items.Deco_MacCleanish.name",
+    "Description": "server.items.Deco_MacCleanish.description"
+  },
+  "BlockType": {
+    "CustomModel": "Resources/Ingredients/Soap/Deco/Soap_Deco_McCleanish.blockymodel",
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Ingredients/Soap/Deco/Soap_Deco_McCleanish.png"
+      }
+    ],
+    "HitboxType": "Rubble",
+    "Opacity": "Transparent",
+    "Group": "Props",
+    "Support": {
+      "Down": [
+        {
+          "MatchSelf": "Disallowed",
+          "Support": "Required",
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "VariantRotation": "NESW",
+    "BlockSoundSetId": "Plushie",
+    "ParticleColor": "#aa8cb6",
+    "Gathering": {
+      "Breaking": {
+        "ItemId": "Deco_MacCleanish",
+        "GatherType": "Woods"
+      }
+    },
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "Effects": {
+              "WorldSoundEventId": "SFX_Plushie_Build"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "ItemSoundSetId": "ISS_Armor_Cloth",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Wool",
+        "Quantity": 10
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Deco_MacCleanish",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "CompoundBench",
+        "Categories": [
+          "CompoundBench_Deco"
+        ],
+        "RequiredTierLevel": 3
+      }
+    ],
+    "TimeSeconds": 2
+  },
+  "Icon": "Icons/ItemsGenerated/Deco_McCleanish.png"
+}

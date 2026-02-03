@@ -1,0 +1,65 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Iron_Chest_Polished.name"
+  },
+  "Parent": "Armor_Iron_Chest",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Iron_Chest",
+        "Quantity": 1,
+        "Durability": 100,
+        "Metadata": {
+          "Durability": 100
+        }
+      },
+      {
+        "ItemId": "Ingredient_Silver_Foam",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "PolishWheel",
+        "Type": "Crafting",
+        "Categories": [
+          "PolishWheel_Iron"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 3
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Overtop",
+      "Cape"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.1026,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.1026,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 17,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "Quality": "Uncommon"
+}

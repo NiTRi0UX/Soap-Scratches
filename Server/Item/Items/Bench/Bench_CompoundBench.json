@@ -1,0 +1,211 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Bench_CompoundBench.name",
+    "Description": "server.items.Bench_CompoundBench.description"
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Soil_Clay",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Hay",
+        "Quantity": 10
+      },
+      {
+        "Quantity": 20,
+        "ResourceTypeId": "Rock"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Workbench_Crafting"
+        ],
+        "Id": "Workbench"
+      }
+    ]
+  },
+  "Categories": [
+    "Furniture.Benches"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Benches/Bench_CompoundBench.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Benches/Bench_CompoundBench.png",
+        "Weight": 1
+      }
+    ],
+    "VariantRotation": "NESW",
+    "Bench": {
+      "Type": "Crafting",
+      "Categories": [
+        {
+          "Id": "CompoundBench_Polish",
+          "Icon": "Icons/CraftingCategories/CompoundBench/Ingredient_Silver_Foam.png",
+          "Name": "server.benchCategories.CompoundBench.Polish"
+        },
+        {
+          "Id": "CompoundBench_Deco",
+          "Icon": "Icons/CraftingCategories/CompoundBench/Deco_Soap.png",
+          "Name": "server.benchCategories.CompoundBench.Deco"
+        }
+      ],
+      "LocalOpenSoundEventId": "SFX_Workbench_Open",
+      "LocalCloseSoundEventId": "SFX_Workbench_Close",
+      "CompletedSoundEventId": "SFX_Workbench_Craft",
+      "FailedSoundEventId": "SFX_Generic_Crafting_Failed",
+      "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
+      "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
+      "Id": "CompoundBench",
+      "TierLevels": [
+        {
+          "CraftingTimeReductionModifier": 0.0,
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ResourceTypeId": "Wood_All_Trunk",
+                "Quantity": 20
+              },
+              {
+                "ItemId": "Ingredient_Bar_Silver",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Leather_Light",
+                "Quantity": 10
+              },
+              {
+                "ItemId": "Ingredient_Hay",
+                "Quantity": 20
+              }
+            ],
+            "TimeSeconds": 5.0
+          }
+        },
+        {
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ItemId": "Ingredient_Bar_Gold",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Hay",
+                "Quantity": 30
+              },
+              {
+                "ResourceTypeId": "Wood_All_Trunk",
+                "Quantity": 30
+              },
+              {
+                "ItemId": "Ingredient_Leather_Medium",
+                "Quantity": 10
+              },
+              {
+                "ItemId": "Ingredient_Bar_Iron",
+                "Quantity": 10
+              }
+            ],
+            "TimeSeconds": 10.0
+          },
+          "CraftingTimeReductionModifier": 0.15
+        },
+        {
+          "CraftingTimeReductionModifier": 0.3
+        }
+      ]
+    },
+    "State": {
+      "Id": "crafting",
+      "Definitions": {
+        "CraftCompleted": {
+          "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim",
+          "Looping": true
+        },
+        "CraftCompletedInstant": {
+          "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim"
+        },
+        "Tier2": {
+          "CustomModel": "Blocks/Benches/Bench_CompoundBench_Tier2.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Benches/Bench_CompoundBench_Tier2.png",
+              "Weight": 1
+            }
+          ],
+          "HitboxType": "CompoundBench",
+          "State": {
+            "Id": "crafting",
+            "Definitions": {
+              "CraftCompleted": {
+                "CustomModelAnimation": "Blocks/Benches/Workbench2_Crafting.blockyanim"
+              }
+            }
+          }
+        },
+        "Tier3": {
+          "CustomModel": "Blocks/Benches/Bench_CompoundBench_Tier2.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Benches/Bench_CompoundBench_Tier3.png",
+              "Weight": 1
+            }
+          ],
+          "HitboxType": "CompoundBench",
+          "State": {
+            "Id": "crafting",
+            "Definitions": {
+              "CraftCompleted": {
+                "CustomModelAnimation": "Blocks/Benches/Workbench3_Crafting.blockyanim"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "ParticleColor": "#6e4a2f",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Wood",
+    "HitboxType": "CompoundBench"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      23,
+      -11.7
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Bench"
+    ]
+  },
+  "MaxStack": 1,
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "Icon": "Icons/ItemsGenerated/Bench_CompoundBench.png"
+}

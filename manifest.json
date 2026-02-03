@@ -1,0 +1,35 @@
+{
+  "Group": "Gobble",
+  "Name": "Soap and Scratches",
+  "Version": "1.0.0",
+  "Description": "Buff your armor before a fight!",
+  "Authors": [
+    {
+      "Name": "NiTR0",
+      "Email": "",
+      "Url": ""
+    },
+    {
+      "Name": "LittleAfrican",
+      "Email": "",
+      "Url": ""
+    },
+    {
+      "Name": "Bradestiot",
+      "Email": "",
+      "Url": ""
+    },
+    {
+      "Name": "Tytekkit",
+      "Email": "",
+      "Url": ""
+    }
+  ],
+  "Website": "",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": true,
+  "SubPlugins": []
+}
