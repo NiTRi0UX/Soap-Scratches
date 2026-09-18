@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic and Trains Concepts | Orbitech Concept</title>
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --card-bg: #1a1a1a;
+            --text: #e0e0e0;
+            --accent: #c4a484; 
+            --highlight: #ffcc00;
+            --border: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://media.discordapp.net/attachments/1413731820767285358/1550295131423506512/Logic_Gates_.png?ex=6aadd05a&is=6aac7eda&hm=1c4b7f53c3d297871e820b6a5f859769329fe4ca3fe20c4f09cd6d5e18145b44&=&format=webp&quality=lossless');
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 4px solid var(--accent);
+        }
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+            color: var(--highlight);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        header p {
+            font-size: 1.4rem;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        nav {
+            background: var(--card-bg);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+        }
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 5rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--border);
+        }
+        h2 {
+            color: var(--accent);
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+            margin-top: 0;
+            font-size: 2rem;
+        }
+        h3 {
+            color: var(--highlight);
+            margin-top: 1.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #444;
+        }
+        .highlight-box {
+            background: #252525;
+            border-left: 4px solid var(--highlight);
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+        code {
+            background: #000;
+            padding: 2px 5px;
+            color: var(--highlight);
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            nav { flex-wrap: wrap; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Logic and Trains Concepts</h1>
+    <p>An expansion Concept for the Orbitech Mod. Integrating Node-based Logic and specialized Railway Automation.</p>
+</header>
+
+<nav>
+    <a href="#overview">Vision</a>
+    <a href="#logic">Logic</a>
+    <a href="#trains">Trains</a>
+    <a href="#kinetics">Kinetics</a>
+    <a href="#experience">Experience</a>
+</nav>
+
+<div class="container">
+    <section id="overview">
+        <h2>1. Project Overview</h2>
+        <p><strong class="accent">Logic and Trains Concepts</strong> is a sophisticated expansion Concept for the <strong class="accent">Orbitech</strong> mod. It introduces a node-based logic and specialized train automation system to the existing Orbitech kinetic framework.</p>
+        <p>The goal is to provide players with a "Satisfactory-style" logic infrastructure that moves away from clunky, block-by-block wiring toward a clean, visually intuitive network.</p>
+        <div class="highlight-box">
+            By merging your concepts with Orbitech, players can use the Orbitech base for kinetic power (Handcranks, Waterwheels) while utilizing the Concept for the "nervous system"—wireless communication, logic gates, and rail controls.
+        </div>
+    </section>
+
+    <section id="logic">
+        <h2>2. Core Logic Mechanics</h2>
+        <p>The logic system is built on <strong class="accent">Point-to-Point Node Connections</strong>, designed to solve the "crammed" look of traditional block-based logic.</p>
+        
+        <h3>A. Signal Transmission & Infrastructure</h3>
+        <p><strong class="accent">Glimmerchords:</strong> Multi-colored wires representing distinct logical channels. <strong class="accent">Channels</strong> allow for parallel logic networks (e.g., a "Red" channel for alarms, "Blue" for lights) without interference.</p>
+        <p><strong class="accent">Nodes (Twine Pines & Poles):</strong> Connections are made by clicking on "Pin Holes." This allows for clean, straight-line wiring and 3D routing.</p>
+        <p><strong class="accent">Transmission Limits:</strong> Connections have a physical build limit. Long-distance signals require <strong style="color: var(--highlight);">Glimmer Intensifiers</strong>, which convert kinetic energy into signal boosting.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295156081557514/Twine_Pins_.png?ex=6aadd060&is=6aac7ee0&hm=bf20c15328fbbec825461376f4896bdfc52e3ba6a29d53438940c4b6bcc8826b&=&format=webp&quality=lossless" alt="Twine Pins">
+                <p><strong class="accent">Twine Pines</strong>: The physical connection point. High customization via pin placement.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295156425752626/Utility_Pole_.png?ex=6aadd060&is=6aac7ee0&hm=bb8749c7a26d564b4fdd600e878fde3b7651d311d0dd0f704f81236e1a99d780&=&format=webp&quality=lossless" alt="Utility Pole">
+                <p><strong class="accent">Glimmer Mast</strong>: Utility poles with built-in pin holes for complex infrastructure.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295134300676186/Signal_Booster_.png?ex=6aadd05b&is=6aac7edb&hm=64cbd58793080655c7a08186565c32454e5ac7a9e3d5a7bda5d221dade6a2c4c&=&format=webp&quality=lossless" alt="Signal Booster">
+                <p><strong class="accent">Glimmer Intensifier</strong>: Boosters for signal strength. They convert kinetic speed into transmission boosting.</p>
+            </div>
+        </div>
+
+        <h3>B. Sensors & Inputs</h3>
+        <p><strong class="accent">Sensy (Entity) & Stunted (Item) Tenna:</strong> Wireless-capable sensors that detect entities or items passing through their range. They connect to another of the same type up to 5 blocks away.</p>
+        <p><strong class="accent">Cinder & Seeker Tenna:</strong> Sending (TX - Red) and receiving (RX - Blue) antennas. They adopt the color channel of the connected glimmerchord and flash when active.</p>
+        <div class="grid">
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295133734576328/Sensors_.png?ex=6aadd05a&is=6aac7eda&hm=76416fce854428195a3e4d490ed0187afbfe14fdf684ec3305ab18b073abd918&=&format=webp&quality=lossless" alt="Sensors">
+                <p><strong class="accent">Sensy & Stunted</strong>: Detect presence and relay signals wirelessly.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295090566664323/Antenna_.png?ex=6aadd050&is=6aac7ed0&hm=ae44a517fd92fc8bad5ed9ee9bf036b851f2d088b1416fffe1a4280e2a573002&=&format=webp&quality=lossless" alt="Antenna">
+                <p><strong class="accent">Cinder & Seeker Tenna</strong>: Dedicated TX and RX antennas for wireless logic transmission.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295130999758868/Lever_and_Button_.png?ex=6aadd05a&is=6aac7eda&hm=2206893dd4234474fbfd332619bb22d7c516d9022dd4cfa567e810370a9ea2dd&=&format=webp&quality=lossless" alt="Lever and Button">
+                <p><strong class="accent">Lever & Button</strong>: Manual inputs with one pin hole. If no pin/antenna is used, they activate the logic block they are attached to.</p>
+            </div>
+        </div>
+
+        <h3>C. Logic Gates & Processing</h3>
+        <p><strong class="accent">Nexus Clusters (Logic Gates):</strong> Logic gates (AND, NAND, OR, NOR, XOR, XNOR, NOT) with two pin holes for input and output. They can take either a pin or an antenna.</p>
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295131423506512/Logic_Gates_.png?ex=6aadd05a&is=6aac7eda&hm=1c4b7f53c3d297871e820b6a5f859769329fe4ca3fe20c4f09cd6d5e18145b44&=&format=webp&quality=lossless" alt="Logic Gates">
+            <p><strong class="accent">Nexus Clusters</strong>: The building blocks of complex, conditional logic. They are designed for modularity and high-density signal processing.</p>
+        </div>
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295131935084584/Modular_Repeater_.png?ex=6aadd05a&is=6aac7eda&hm=d780fb7064f2ccbc1723f91cb9a71029a3d56cccffb91afe231855856294ee78&=&format=webp&quality=lossless" alt="Modular Repeater">
+            <p><strong class="accent">Link Board & Matrix</strong>: Multi-pin connectors. The Board has two holes; the Matrix has three. They are used to pair pins with antennas, pair antennas with sensors, or convert channels as repeaters.</p>
+        </div>
+
+        <h3>D. Player Control & Microcontrollers</h3>
+        <p>Advanced interaction and automation components for the player.</p>
+        <div class="grid">
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295091627819100/Crystal_Trumpet_.png?ex=6aadd050&is=6aac7ed0&hm=85436d6a4d690d8348b611b08932cd1d7b5b14dcd97f3dc4d8e665082fa81173&=&format=webp&quality=lossless" alt="Resonance Horn">
+                <p><strong class="accent">Resonance Horn</strong>: The player's remote control. It features four slots for crystals to set channel colors and a radial menu for selection.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295090180923433/Acoustic_Responder_.png?ex=6aadd050&is=6aac7ed0&hm=50208786ed47f8d7ee4fcb1beaf3f7b5acd6054efcb0d3af9a7d6faf06bd2501&=&format=webp&quality=lossless" alt="Acoustic Receptor">
+                <p><strong class="accent">Acoustic Receptor</strong>: The receiver for the Resonance Horn. It requires a crystal to set the responding channel and has a pin hole for output.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295132862152734/Orchestrion_.png?ex=6aadd05a&is=6aac7eda&hm=9fea240fdccc88983e6c9043ec26815c4c5e9c9593db76d19810114501c2ee7a&=&format=webp&quality=lossless" alt="Orchestrion">
+                <p><strong class="accent">Orchestrion</strong>: The "de facto" microcontroller. It takes a "Pull Signal" (up for start, down for stop) and automatically plays a Phonic Score.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295132354383872/Music_Roll_.png?ex=6aadd05a&is=6aac7eda&hm=7170dc9c79458ede5e4fc110c2d4c425f7501f08c0f13ae5b3725d3a3f36b865&=&format=webp&quality=lossless" alt="Phonic Score">
+                <p><strong class="accent">Phonic Score</strong>: A programming sheet for the Orchestrion. Features a blank inventory to program automatic logic control or music.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="trains">
+        <h2>3. Train Logic</h2>
+        <p>A dedicated suite of components designed to integrate seamlessly with the Orbitech kinetic network for railway automation.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295134724296724/Track_Controller_.png?ex=6aadd05b&is=6aac7edb&hm=7214d35fa608bd32ead12c7a81ba1d38fa87ef3665bcb18c33fc2be15d08c883&=&format=webp&quality=lossless" alt="Track Controller">
+                <p><strong class="accent">Rail Router</strong>: A train-specific track switcher. It takes a signal over a pin hole and directs a train down a different track (supports 3 states: left, right, middle).</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295135131279421/Track_Invoker_.png?ex=6aadd05b&is=6aac7edb&hm=380d7ec1c69089cc029d157072b19f89bf801c7c27191ea28c9d825321d57935&=&format=webp&quality=lossless" alt="Track Responder">
+                <p><strong class="accent">Track Chime & Responder</strong>: Devices to pass signals to/from trains traveling above, facilitating remote signaling and rail coordination.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295090902081657/Chute_Gate_.png?ex=6aadd050&is=6aac7ed0&hm=bb6edc2cc54b113b88250a01dde0929f50cfd04fce7d0a08e51813f9725b87f1&=&format=webp&quality=lossless" alt="Chute Gate">
+                <p><strong class="accent">Chute Guard</strong>: A logic-controlled gate for chutes. Signal pull-up opens; pull-down closes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kinetics">
+        <h2>4. Items and Kinetics</h2>
+        <p>Resource processing and the manufacturing pipeline for the Concept.</p>
+
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295156849123359/Wafer_.png?ex=6aadd060&is=6aac7ee0&hm=6da98c2e768c90d67e78b3c13bed43a4f6e7f81514089b5368b78db08d62c7eb&=&format=webp&quality=lossless" alt="Wafer">
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295092554764428/Etched_Wafer_.png?ex=6aadd051&is=6aac7ed1&hm=3297f0232e29ffb0a8334da29906393ec906bf983b5577eab3e0f918da11bd47&=&format=webp&quality=lossless" alt="Etched Wafer">
+            </div>
+        </div>
+
+        <h3>Manufacturing Pipeline</h3>
+        <p>Silica Powder &rarr; Silicon Ingot &rarr; Wafer &rarr; Etched Wafer &rarr; Link Board &rarr; Nexus Cluster</p>
+
+        <h3>Processing Machines & Resources</h3>
+        <div class="grid">
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295091195678741/Crystal_Seeder_.png?ex=6aadd050&is=6aac7ed0&hm=bb2c24098a96ebe1a193915b7a851747ec0ad32f098e2106dda0b1e166796015&=&format=webp&quality=lossless" alt="Crystal Seeder">
+                <p><strong class="accent">Geo-Vat</strong>: A crystal farm that grows from shards and consumes water.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295093997608980/Kinetic_Spinner_.png?ex=6aadd051&is=6aac7ed1&hm=f876fb27d163267ea8d1fee7c7fd993d477aad4f183c793d47adf49b1d8b9f83&=&format=webp&quality=lossless" alt="Kinetic Spinner">
+                <p><strong class="accent">Kinetic Spinner</strong>: Automatically crafts Glimmerchord and other fibers.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295155729506336/Tumbler_Compost_.png?ex=6aadd060&is=6aac7ee0&hm=ef33cca2fce7be57e976284a3ee64a23993f97ae2cb1780e255d899271570612&=&format=webp&quality=lossless" alt="Tumbler Compost">
+                <p><strong class="accent">Metabolic Agitater</strong>: Processes compost into Nitrate, Fertilizer, and Potash.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295093204746390/Heater_Core_.png?ex=6aadd051&is=6aac7ed1&hm=20e7a7ebbfe45982976114d0241e2ee02d61b11dd65d4bec30444de5304d30ef&=&format=webp&quality=lossless" alt="Heater Core">
+                <p><strong class="accent">Heater Core</strong>: Automatically bakes Etched Wafers into Link Boards (also cooks food).</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1413731820767285358/1550295093653667910/Kinetic_Roller_.png?ex=6aadd051&is=6aac7ed1&hm=ac2d1de874397d3b32c29c92b9dee533a563598102004917ebc04566d6b72bf3&=&format=webp&quality=lossless" alt="Kinetic Roller">
+                <p><strong class="accent">Rod-Mil</strong>: Automatically turns metal plates into metal tubes, or metal ingots into metal rods.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>5. Player Experience</h2>
+        <p>The progression path for players exploring the new logic and train systems.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Beginner Entry Points</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 10px;">• <strong class="accent">Manual Power</strong>: Using a Handcrank to power a Kinetic Spinner.</li>
+                    <li style="margin-bottom: 10px;">• <strong class="accent">Simple Logic</strong>: Using a Lever to turn on a light.</li>
+                    <li style="margin-bottom: 10px;">• <strong class="accent">Basic Railway</strong>: Using a Track Chime and Chime Ear to send a simple "Pass" signal to a train.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Advanced Play</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 10px;">• <strong class="accent">Wireless Automation</strong>: Using Stunted-Tenna sensors to detect full bins and trigger a Packager via a Link Board.</li>
+                    <li style="margin-bottom: 10px;">• <strong class="accent">The Orchestrator</strong>: Programming an Orchestrion with a "Growth Cycle" score to cycle through machines.</li>
+                    <li style="margin-bottom: 10px;">• <strong class="accent">Automated Rail Hubs</strong>: Using Rail Routers and Chute Guards to coordinate a fleet of trains.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Build Scenarios</h3>
+        <div class="card" style="margin-top: 20px;">
+            <h4 style="color: var(--highlight); margin-top: 0;">Scenario 1: The Automated Flax Farm</h4>
+            <p>A Waterwheel powers a Kinetic Spinner and a Milling Stone. A Stunted-Tenna detects when the Flax bin is full, signaling a Chute Guard to release the processed Flax.</p>
+        </div>
+        <div class="card" style="margin-top: 20px;">
+            <h4 style="color: var(--highlight); margin-top: 0;">Scenario 2: The Orchestrated Orchard</h4>
+            <p>A large kinetic network powers various mixers and processors. The Orchestrion is programmed with a "Growth Cycle" score, activating the machines in a specific sequence every 10 minutes.</p>
+        </div>
+        <div class="card" style="margin-top: 20px;">
+            <h4 style="color: var(--highlight); margin-top: 0;">Scenario 3: The Rail Logistics Hub</h4>
+            <p>A large-scale kinetic network powers the heavy machinery for packing. Rail Routers and Track Chimes coordinate a fleet of trains. Sensors detect cargo types, and Rail Routers direct the trains to the correct "Track."</p>
+        </div>
+    </section>
+</div>
+
+<footer style="text-align: center; padding: 2rem; background: var(--card-bg); border-top: 1px solid var(--border);">
+    <p>&copy; 2026 Logic and Trains Concepts | An Concept for the Orbitech Mod</p>
+</footer>
+
+</body>
+</html>
